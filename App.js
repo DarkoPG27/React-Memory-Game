@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import './App.css';
 
-
 const cardImages = [
   { "src": "/img/card-1.jpeg" },
   { "src": "/img/card-2.jpeg" },
@@ -10,7 +9,6 @@ const cardImages = [
   { "src": "/img/card-5.jpeg" },
   { "src": "/img/card-6.jpeg" },
 ]
-
 
 function App() {
   const [cards, setCards] = useState([])
@@ -33,6 +31,17 @@ function App() {
     <div className="App">
       <h1>Memory Game</h1>
       <button onClick={shuffleCards}>New Game</button>
+
+      <div className="card-grid">
+        {cards.map(card => (
+          <div className="card" key={card.id}>
+            <div>
+              <img className="front" src={card.src} alt="card front" />
+              <img className="back" src="/img/card-cover.jpeg" alt="card back" />
+            </div>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
