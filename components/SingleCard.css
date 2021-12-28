@@ -11,13 +11,13 @@
 
 /* front of card -the picture */
 .card .front{
-    transform: rotateX(90deg);
+    transform: rotateY(90deg);
     transition: all ease-in 0.2s;
     position:absolute;
 }
 
 .flipped .front {
-    transform: rotateX(0deg);
+    transform: rotateY(0deg);
     transition-delay: 0.2s;
 }
 
@@ -28,7 +28,7 @@
 }
 
 .flipped .back {
-    transform: rotateX(90deg);
+    transform: rotateY(90deg);
     transition-delay: 0s;
 }
 

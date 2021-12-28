@@ -56,7 +56,6 @@ function App() {
     }
   }, [choiceOne, choiceTwo])
 
-
   // reset choices & increase turn
   const resetTurn = () => {
     setChoiceOne(null)
@@ -66,7 +65,6 @@ function App() {
   }
 
   // start a new game automatically
-
   useEffect(() => {
     shuffleCards()
   }, [])
