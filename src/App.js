@@ -62,7 +62,7 @@ function App() {
   const resetTurn = () => {
     if (choiceOne.src === choiceTwo.src) {
       setTurns(turns)
-      setScore(prevScore => prevScore - 1)
+      setScore(prevScore => prevScore + 1)
     }
     else { setTurns(prevTurns => prevTurns - 1) }
     setChoiceOne(null)
