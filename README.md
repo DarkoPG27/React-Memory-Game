@@ -1,4 +1,4 @@
-# React Colors Project
+# React Memory Game
 
 - Try [Memory Game](https://darko-react-memory-game.netlify.app/)
 
